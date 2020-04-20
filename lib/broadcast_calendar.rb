@@ -1,4 +1,5 @@
-require "date"
+require 'date'
+require 'broadcast_calendar/version'
 
 module BroadcastCalendar
   extend self
