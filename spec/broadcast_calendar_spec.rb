@@ -47,7 +47,7 @@ describe BroadcastCalendar do
   }
 
   describe '::VERSION' do
-    it { expect(described_class::VERSION).to eql('1.1.2.pre.7677216x') }
+    it { expect(described_class::VERSION).to eql('1.1.2.pre.7677216') }
   end
 
   describe '#dates_for' do
