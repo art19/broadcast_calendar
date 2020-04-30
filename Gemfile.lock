@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    broadcast_calendar (1.1.2.pre.7677216)
+    broadcast_calendar (1.1.2)
 
 GEM
   remote: https://rubygems.org/
