@@ -28,7 +28,7 @@ PLATFORMS
 DEPENDENCIES
   broadcast_calendar!
   rake (~> 13.0.1)
-  rspec (>= 3.3.0)
+  rspec (>= 3.9.0)
 
 BUNDLED WITH
    2.1.4

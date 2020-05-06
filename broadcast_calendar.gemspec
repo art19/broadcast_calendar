@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Returns the beginning and ending Gregorian (civil) dates for months or weeks in the broadcast calendar.}
   s.description = %q{Library tht returns the beginning and ending Gregorian (civil) dates for months or weeks in the broadcast calendar.}
   s.test_files = `git ls-files spec`.split("\n")
-  s.add_development_dependency 'rspec', '>= 3.3.0'
+  s.add_development_dependency 'rspec', '>= 3.9.0'
   s.add_development_dependency 'rake',  '~> 13.0.1'
 
   s.license = "MIT"
