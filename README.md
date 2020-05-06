@@ -1,5 +1,8 @@
 # BroadcastCalendar Gem
 
+_Note: This is a permanent fork of the original broadcast_calendar because we made a few changes and brought it up to 
+date with ruby 2.7.1, and the original is no longer actively maintained._
+
 This library returns the beginning and ending Gregorian (civil) dates for months in the 
 [broadcast calendar](http://en.wikipedia.org/wiki/Broadcast_calendar).
 

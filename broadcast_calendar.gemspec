@@ -2,7 +2,7 @@ $:.unshift(File.dirname(__FILE__))
 require 'lib/broadcast_calendar/version'
 
 Gem::Specification.new do |s|
-  s.name = %q{broadcast_calendar}
+  s.name = 'art19-broadcast_calendar'
   s.version = BroadcastCalendar::VERSION
   s.authors = ["Mike Subelsky"]
   s.date = Time.now.utc.strftime("%Y-%m-%d")
@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w(README.md)
   s.files = `git ls-files`.split("\n")
   s.homepage = %q{http://github.com/subelsky/broadcast_calendar}
+  s.metadata = { 'github_repo' => "ssh://github.com/art19/broadcast_calendar" }
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.summary = %q{Returns the beginning and ending Gregorian (civil) dates for months or weeks in the broadcast calendar.}
