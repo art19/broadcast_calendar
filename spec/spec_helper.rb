@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require 'simplecov'
 require 'spork'
-
-if ENV['COVERAGE']
-  SimpleCov.start do
-    add_filter 'spec/support'
-  end
-end
 
 Spork.prefork do
   require 'rspec'
+
+  if ENV['COVERAGE']
+    require 'simplecov'
+    SimpleCov.start do
+      add_filter 'spec/support'
+    end
+  end
 
   RSpec.configure do |config|
     config.mock_with :rspec
