@@ -12,3 +12,14 @@ notifications:
   slack:
     rooms:
       secure: u/8B1oyLGVu5Ymxl60YfoJDAiqF+ZumKMM+0oMrwuPc3d1xxHNutNGSRVJ2mj6CvVQWFkrAWwFOwpOtq+YxAOR35V32kpso0DcFYhs/3RAK7st5I6dBlXLT0nsh102yRKN7mdAYHolFMSF6szdXJrvEt6aWgWnT5ITHt66ZB6Lt3QRBdybod0MzEdtmYoe12gUBzZqbzA/MIMmy4j49GIazPsiOj7W8g/YV/XW5aozJuu3v6Cp7SRlVclzEDEQQx2oKdXjVArHv9Wc7GVkTrWss5vr8/jny2VQPV+m1gOpn2Ie8x7hlqYEMiz3z1ONQevrs6CgQLJSZ7zj8+73Vye4evxm4MXGrXRZKo4wdXLTJBsOZUWWDpkoJLLNli7uEy03m3ddQW88LkOlG7aRnaoJYIirQmdZ3F5U5+9kyyfbDpUKQswSgxhWH55AHg2jUJhg7fu5aSCUZ10Y6FYXZXdgV1lu4+gWwvo5Hvea54KbjMkzOR4MRiEhz3qZa2r5rsRhyoA3k+kQ+czbUO4gnYmLsK/s6btByI3aICKQgMFzOg5ALM0kytLk/ND7G3uCicco/sWHcV1r5CfEcZgcY+vJnHoz6n96eqLqJfq1ZwDWfsn7DXOUWKuFzOzzdc/EO28yKs31+kZROeP7E3XKm58l7Me1yOkVdr+QeC4mzqhP4=
+
+before_install:
+  - . $TRAVIS_BUILD_DIR/bin/ci-command.sh before_install
+
+before_script:
+  - . $TRAVIS_BUILD_DIR/bin/ci-command.sh before_script
+
+script: $TRAVIS_BUILD_DIR/bin/ci-command.sh script
+
+after_success:
+  $TRAVIS_BUILD_DIR/bin/ci-command.sh after_success
