@@ -1,9 +1,13 @@
 language: ruby
 dist: bionic
 rvm:
-- 2.7.1
+- 2.6
+- 2.7
 cache:
   bundler: true
+script:
+  - bundle exec rubocop
+  - bundle exec rake spec
 notifications:
   slack:
     rooms:

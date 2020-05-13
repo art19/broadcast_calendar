@@ -1,0 +1,7 @@
+inherit_from: ../.rubocop.yml
+
+Metrics/BlockLength:
+  Max: 100 # increased because tests data bloats this
+
+RSpec/ExampleLength:
+  Max: 7 # increased from default (5) because of some looping through test data
