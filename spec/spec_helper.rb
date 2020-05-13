@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
+require 'simplecov'
 require 'spork'
+
+if ENV['COVERAGE']
+  SimpleCov.start do
+    add_filter 'spec/support'
+  end
+end
 
 Spork.prefork do
   require 'rspec'
