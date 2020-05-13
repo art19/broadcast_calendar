@@ -81,7 +81,7 @@ after_success() {
   echo "** after_success"
 
   if [ "x$COVERAGE" = "xtrue" ]; then
-    ~/bin/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+    ~/bin/cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
   else
     echo "** COVERAGE reporting is turned OFF"
   fi
