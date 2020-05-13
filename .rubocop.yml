@@ -1,48 +1,27 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.7
   Exclude:
     - "bin/*"
-    - "db/schema.rb"
     - "vendor/**/*"
 
-Lint/AmbiguousBlockAssociation:
-  Enabled: false # This is broken in Rubocop 0.48
 
 Metrics/BlockLength:
   Exclude:
     - "**/*.rake"
-    - "doc/api/swagger_classes/**/*.rb"
 
-Metrics/ClassLength:
-  Exclude:
-    - "doc/api/swagger_classes/**/*.rb"
 
 Layout/LineLength:
   Max: 160 # 80*2 - you have a widescreen monitor, right?
 
-Metrics/MethodLength:
-  Exclude:
-    - "db/migrate/**/*" # DB migrations can be quite long.
-
-Metrics/ParameterLists:
-  CountKeywordArgs: false
 
 Naming/FileName:
   Exclude:
     - "lib/art19-broadcast_calendar.rb" # It's named that way because we renamed the gem when we forked.
 
-Style/Documentation:
-  Exclude:
-    - "app/serializers/**/*_serializer.rb" # serializers are self documenting
-
 Layout/EndOfLine:
   EnforcedStyle: lf
-
-Layout/FirstHashElementIndentation:
-  Exclude:
-    - "spec/serializers/**/*_spec.rb" # serializer specs break this rule for clean reading
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
@@ -52,11 +31,3 @@ Style/PercentLiteralDelimiters:
     '%r': '{}'
     '%w': '[]'
     '%W': '[]'
-
-Layout/SpaceBeforeFirstArg:
-  Exclude:
-    - 'app/models/**/*.rb'
-    - "app/serializers/**/*_serializer.rb" # serializers often line up has_one and has_many.
-    - "config/routes.rb" # 'resource' and 'resources' should be aligned
-    - "db/migrate/**/*" # DB migrations are usually formatted to read better.
-    - "spec/factories/**/*" # Factories are usually aligned for readability
