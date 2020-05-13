@@ -81,7 +81,7 @@ after_success() {
   echo "** after_success"
 
   if [ "x$COVERAGE" = "xtrue" ]; then
-    ~/bin/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+    ~/bin/cc-test-reporter format-coverage --debug -t simplecov -o "coverage/codeclimate.${TRAVIS_JOB_NUMBER}.json"
   else
     echo "** COVERAGE reporting is turned OFF"
   fi
