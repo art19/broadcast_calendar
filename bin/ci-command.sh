@@ -70,6 +70,7 @@ script() {
   sync
 
   export RACK_ENV=test
+  bundle exec rubocop
   bundle exec rspec
 }
 
