@@ -1,8 +1,8 @@
 language: ruby
 dist: bionic
 rvm:
-  - 2.6.2
-  - 2.7
+- 2.6.2
+- 2.7
 cache:
   bundler: true
 notifications:
@@ -10,20 +10,17 @@ notifications:
     secure: u/8B1oyLGVu5Ymxl60YfoJDAiqF+ZumKMM+0oMrwuPc3d1xxHNutNGSRVJ2mj6CvVQWFkrAWwFOwpOtq+YxAOR35V32kpso0DcFYhs/3RAK7st5I6dBlXLT0nsh102yRKN7mdAYHolFMSF6szdXJrvEt6aWgWnT5ITHt66ZB6Lt3QRBdybod0MzEdtmYoe12gUBzZqbzA/MIMmy4j49GIazPsiOj7W8g/YV/XW5aozJuu3v6Cp7SRlVclzEDEQQx2oKdXjVArHv9Wc7GVkTrWss5vr8/jny2VQPV+m1gOpn2Ie8x7hlqYEMiz3z1ONQevrs6CgQLJSZ7zj8+73Vye4evxm4MXGrXRZKo4wdXLTJBsOZUWWDpkoJLLNli7uEy03m3ddQW88LkOlG7aRnaoJYIirQmdZ3F5U5+9kyyfbDpUKQswSgxhWH55AHg2jUJhg7fu5aSCUZ10Y6FYXZXdgV1lu4+gWwvo5Hvea54KbjMkzOR4MRiEhz3qZa2r5rsRhyoA3k+kQ+czbUO4gnYmLsK/s6btByI3aICKQgMFzOg5ALM0kytLk/ND7G3uCicco/sWHcV1r5CfEcZgcY+vJnHoz6n96eqLqJfq1ZwDWfsn7DXOUWKuFzOzzdc/EO28yKs31+kZROeP7E3XKm58l7Me1yOkVdr+QeC4mzqhP4=
 env:
   global:
-    - secure: v7wD8cPqcASSLLTT78ieJaO/Mn1cAnulc6+CfjCG4p3qfHYJ3S+eMeAA7q/RodbA8kJCICsHbmxm9R4jVPifJU3T4fci9sm62NlRXGsy3grDWGfs+U8lvMBpo/pahrspj3NMA02IcW2cXyea3yOsJEFGDOcLQ/HbrrKW0TKYJxeDB7y2uAVkDqGXMCbZnoY3y/gQPNtquWK+yAJa1k/ymhpfyFaG/tHXxhF2+msKJbt+qnh7QI3V4Xgu7S6+VHb3nEWR1JJRlGAVRZC5FQs7P9MjSYFDB/zxoh9uhowrPNueMmHi6tvmxPp6+fPnx5r4mSAxxb6j5re8hgSZbIeqFPZflyrcdX3kOjLZwM2db4RCtVrZnZQlsZzzw99GTHzcF5CjHvYRMENmh9zqQEv5UJBioTVhLW1DAckcPUDTapHO2iMmcOGwOeFzolBnqNOfXMjWXP5pBACAgaaSno1eMt8JkrWkExKmGAFXMZT7E/9LbhNijwHxBEmbKNCX3umUzshhpXxUol44FkiW1t7rogkofi4omIOtxzEo5xksGX6aU8Vs65xlkdJ74b09hLLp9yTiSACETz56dzupPRFSi0ZPuNnR4vzNkameVGtr1WjAkBrSdYxbqeGB//rOkbTMBj3U5gOjQnCdXNaHIZKjcqPtzoGAwpeC4LS7fbQuMIQ=
-
+  - secure: m/N6qk/17Eo/iIqa6ASpwTqObDKqnj6TowHQRmOyrp3abueC6iOJXqhEiRevbDyKm6c7ku2HjtYTUgcE8GckYjRwjmhYbiQHsjtkmMCde5IzD7raOlcsQqZ9LSXtDE5JDEGumT9xD/30LzGxlhi+KHpJvCATIGFYyapOClGa+b9aH1tv7dEVGqzinmiSyU3/YUSmQsulzG4gKr8QI64Jr1Sz+rS36DxiOBWDBxVXb5HhVxcWY635+G6VcXf7S/Kp5XOhHwuc3ypy1xCQ1dhV0SR8i+QlKS0YRWndUFqCSZFWB30WMjZTkPlIrW8EpLl0sosHvUzGEdisRHn0OAWtDOSvfmob3UbrZlAJqG+yd4Kjz0SI72zG7UQvjhrFXahrNJ86wLEtAj3RF65WYTPG34O1XKCAp4l1TspA+OPNzyWV5Gx8XuixLVFaE/IZUK186uBlOAjeI6QoWzGaLzgEk58AmKJZanAM+pc4eN/mSZuBReXl61Poffqr5LORgjCcKBetEN/xQBkd3f4F/im4GNO/m6JX6MKwrd1HhbrvKWuv4NDDoFJCNYDVeTAak7l9y6joF0bJfjqcOaVQI6Xl1Lt7sVYNMA5Dxvo+Sjy1u+JkBVYedl/jNbwCOmEBAWyQbszy9Tm+TkJK5+bsZL4oFo2kuUHCBxBGGFO1vMC1K20=
 before_install:
-  - gem install bundler
-  - bundle --version
-
+- gem install bundler
+- bundle --version
 before_script:
-  - echo -e "build ruby version $TRAVIS_RUBY_VERSION"
-  # Only run code coverage reporting in MRI/YARV
-  - if [ "$TRAVIS_RUBY_VERSION" = "2.6.2" ]; then export COVERAGE=true; fi
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ~/cc-test-reporter && chmod +x ~/cc-test-reporter
-  - if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter before-build; fi
-
+- echo -e "build ruby version $TRAVIS_RUBY_VERSION"
+- if [ "$TRAVIS_RUBY_VERSION" = "2.6.2" ]; then export COVERAGE=true; fi
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  > ~/cc-test-reporter && chmod +x ~/cc-test-reporter
+- if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter before-build; fi
 script: bundle exec rspec
-
 after_script:
-  - if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
+- if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT;
+  fi
