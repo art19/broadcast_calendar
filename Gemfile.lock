@@ -1,32 +1,61 @@
 PATH
   remote: .
   specs:
-    broadcast_calendar (1.1.1)
+    art19-broadcast_calendar (1.1.3)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
+    ast (2.4.0)
     diff-lcs (1.3)
-    rspec (3.7.0)
-      rspec-core (~> 3.7.0)
-      rspec-expectations (~> 3.7.0)
-      rspec-mocks (~> 3.7.0)
-    rspec-core (3.7.0)
-      rspec-support (~> 3.7.0)
-    rspec-expectations (3.7.0)
+    docile (1.3.2)
+    jaro_winkler (1.5.4)
+    json (2.3.0)
+    parallel (1.19.1)
+    parser (2.7.1.2)
+      ast (~> 2.4.0)
+    rainbow (3.0.0)
+    rake (13.0.1)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
+    rspec-expectations (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-mocks (3.7.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-support (3.7.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.2)
+    rubocop (0.79.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    rubocop-rspec (1.35.0)
+      rubocop (>= 0.60.0)
+    ruby-progressbar (1.10.1)
+    simplecov (0.17.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    unicode-display_width (1.6.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  broadcast_calendar!
-  rspec (>= 3.3.0)
+  art19-broadcast_calendar!
+  rake (~> 13.0.1)
+  rspec (>= 3.9.0)
+  rubocop (~> 0.79.0)
+  rubocop-rspec (~> 1.35.0)
+  simplecov (~> 0.17.0)
 
 BUNDLED WITH
-   1.16.0
+   2.1.4

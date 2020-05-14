@@ -1,0 +1,33 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - "bin/*"
+    - "vendor/**/*"
+
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*.rake"
+
+
+Layout/LineLength:
+  Max: 160 # 80*2 - you have a widescreen monitor, right?
+
+
+Naming/FileName:
+  Exclude:
+    - "lib/art19-broadcast_calendar.rb" # It's named that way because we renamed the gem when we forked.
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: ()
+    '%i': '[]'
+    '%I': '[]'
+    '%r': '{}'
+    '%w': '[]'
+    '%W': '[]'
