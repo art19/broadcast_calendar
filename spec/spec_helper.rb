@@ -4,14 +4,13 @@ require 'rspec'
 
 if ENV['COVERAGE']
   require 'simplecov'
-  SimpleCov.start do
-    add_filter 'spec/support'
-  end
+  SimpleCov.start
 end
 
 RSpec.configure do |config|
   config.mock_with :rspec
   config.order = :random
+  config.after(:suite) { SimpleCov.at_exit_behavior } if ENV['COVERAGE']
 end
 
 require 'rspec/expectations'
