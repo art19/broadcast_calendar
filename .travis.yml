@@ -22,5 +22,4 @@ before_script:
 - if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter before-build; fi
 script: bundle exec rspec
 after_script:
-- if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT;
-  fi
+- if [ "x$COVERAGE" = "xtrue" ]; then ~/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
