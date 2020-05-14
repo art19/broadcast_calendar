@@ -1,8 +1,8 @@
 language: ruby
 dist: bionic
 rvm:
-- 2.6.2
-- 2.7
+  - 2.6.2
+  - 2.7
 cache:
   bundler: true
 notifications:
@@ -12,7 +12,7 @@ notifications:
 addons:
   code_climate:
     repo_token:
-      secure: "cjZb5/ocz4JV6m0NOow2ljlY5QM2FgL/CigWlo4oV+Vzu02OW3zgwRsv08B3Rd09MEB9V+ETBYFsK3ELitOiQRgeBX0go65j8779vZP97AyDj2QNQhteFsmUJr0HsqI2zLv18Ts2uglWZ4iFwARg9xMK8GMmDm5kx4aWXUFAokIkkTHJJE1cN7v5QOdjrek5CxEOip7hOhOppmKCOOzxsyFow0dwqMBEaIaBS/yFNg8G5rW5RHRUsMdULQziFdmHm1XgJpj5+s4sEcYHQ7a7xehLy2KsZZD5sIYCulGgQawgaPy8JPxxC/K9s9qfR1GZwdujp5tgkQ9eh1LMZKTnXJfIKQj0EwxdTGB3eKA1sgE0xsFyUBQ9EBp0RjORojGFcmNbOiqXBI8EKlwAXBCCTkFI74jl3h4X7prUWiF7WSuk7nwYdoT0zV2GrdqS3BA6O7+FxTFVJiYq6Jl+ECcfmcKfNegSX8kMeHSA2sba9dIEIuXDXFOyPaFGeogHETWJdx2VH1/uEDtVmP6egWl6NGkoJTF/ZWT/TVCUSp+ZHJzIB5ijCFvxx5Ja9VyiDmaUYrcex2o95mVKbq0GYxJDxP1pwe5/4nuOx9s2F9xgzNNorKosE6zP0MuWF0/eULMeM9wR4tIjJFsVpsnGzgEZQ76jB7+kHEeaEIgz7LQddPQ="
+      secure: "fTt76JqkkPPoHUGr8RWX8QcPw4Ju/CNw2EmHWRZkv2T7DU94Scb2dQxykcLRo1bTrhk6dd28eUdBPKz8VvXEMFnaFPpMv9JQcazAL9jc5MFK96Df11VvU+ZhcvM8ITimECCnNBs3lzZQPT9L9juZAfJrpq6x5dEXQK+WcJ9mDPT9QL+edktsUFb++7VoB5+AiMDRCi/BzRAmmRQzD3w/FLOwa6Y0wwus9yGp2J5yM3RXb4wWzhRbtoRodxpVY8CmOh9GFshI3TW5/g0+JwGP9KO4oqMd1lKAK7m0waIlMoDF4SOULjaE0pS35Pa11d5UPtHazmW3p7Q/9cI6DtdlkzacUyIOavhcHmkLaHCgSuY83V9bz/ZQHEujJkQiC6Nn/JvK3TzA8dpKJN6vasLYWuNuATCkRmcgY6kSSGM2gEzQiKcEMwQdFeU+MoDp1o9O3Z/YleCtTCL8CDjSrjqaOUGnCoXCs8Vim3Pv2b43+Xu28PO5y8SOG9VFd8edI0hkFnQQRBCAkaKmVgR/cwVvF9cxiEDjuAgF9keTaUSZxD+GTv7vOGMBJCQdK0P24GLBvB+SAgNsQpTHFa/x+CRfpQWCigUiTeuFy+eWZiTZq4DJ7o8KMGjEDsxlYGSeU+zUsjkQgQwunZg2th2HtKNPRYtsfzXxS7tHZY2xMR7OWlw="
 
 before_install:
   - gem install bundler
