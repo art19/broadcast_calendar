@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require 'broadcast_calendar'
 
 describe BroadcastCalendar do
   let(:dates) do

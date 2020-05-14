@@ -1,5 +1,9 @@
 # BroadcastCalendar Gem
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/bb4de6c6edbb7fce0b31/maintainability)](https://codeclimate.com/repos/5ebc831d1bb033009e0000d6/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/bb4de6c6edbb7fce0b31/test_coverage)](https://codeclimate.com/repos/5ebc831d1bb033009e0000d6/test_coverage)
+[![Build Status](https://travis-ci.com/art19/broadcast_calendar.svg?branch=master)](https://travis-ci.com/art19/broadcast_calendar)
+
 _Note: This is a permanent fork of the original broadcast_calendar because we made a few changes and brought it up to 
 date with ruby 2.7.1, and the original is no longer actively maintained._
 
